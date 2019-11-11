@@ -2,6 +2,7 @@ $btn-color: red;
 $lightGrey: #c3ccd3;
 $grey: #768791;
 $darkGrey: #263843;
+$border-color: #c3ccd3;
 
 *,
 *::before,
@@ -9,7 +10,7 @@ $darkGrey: #263843;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  //   outline: 1px solid red;
+  // outline: 1px solid red;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -91,10 +92,64 @@ body {
 }
 
 .footer {
+  display: flex;
   width: 100%;
-  height: 350px;
+  height: 460px;
   background: $darkGrey;
   color: #ddd;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 60px;
+
+  &__rightWrapper {
+    width: 50%;
+
+    .newsletter {
+      display: flex;
+      flex-direction: column;
+
+      &__header {
+        font-size: 20px;
+        font-weight: 700;
+        width: 320px;
+
+        &::after {
+          content: " ";
+          display: block;
+          border: 1px solid $border-color;
+          margin-top: 15px;
+        }
+      }
+      &__input {
+        width: 430px;
+        height: 63px;
+        margin-top: 30px;
+        background: rgba(118, 135, 145, 0.15);
+        border: none;
+        padding: 20px;
+        font-size: 18px;
+        color: $lightGrey;
+      }
+    }
+
+    .socials__header {
+      margin-top: 45px;
+      font-weight: bold;
+      width: 320px;
+
+      &::after {
+        content: "";
+        display: block;
+        border: 1px solid $border-color;
+        margin-top: 15px;
+      }
+    }
+  }
 }
-.footer__copyright {
+
+::-webkit-input-placeholder {
+  font-size: 18px;
+  color: $grey;
+  letter-spacing: 1px;
 }
