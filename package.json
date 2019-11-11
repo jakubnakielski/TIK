@@ -4,20 +4,20 @@
   "description": "ajax-test",
   "main": "index.html",
   "watch": {
-    "watch:autoprefixer": "dist/css/style.css"
+    "watch:autoprefixer": "build/css/style.css"
   },
   "scripts": {
     "init": "npm-run-all init:*",
     "watch": "npm-run-all --parallel watch:* watch:sass watch:npm-watch",
-    "init:del": "rimraf dist/css dist/img dist/js",
-    "init:create": "mkdirp dist dist/img dist/js dist/css src src/img src/scss src/js",
-    "init:index": "touch dist/index.html src/scss/style.scss dist/css/style.css src/js/script.js",
+    "init:del": "rimraf build/css build/img build/js",
+    "init:create": "mkdirp build build/img build/js build/css src src/img src/scss src/js",
+    "init:index": "touch build/index.html src/scss/style.scss build/css/style.css src/js/script.js",
     "init:git": "touch .gitignore README.md",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "images": "imagemin src/img/**/* --out-dir=dist/img",
-    "watch:sass": "node-sass --watch --recursive --source-map-embed true --output-style compressed -o dist/css src/scss/style.scss",
-    "watch:autoprefixer": "autoprefixer-cli dist/css/style.css",
-    "watch:browser": "browser-sync start -s -f dist/css/*.css dist/index.html --startPath dist/index.html -b chrome ",
+    "images": "imagemin src/img/**/* --out-dir=build/img",
+    "watch:sass": "node-sass --watch --recursive --source-map-embed true --output-style compressed -o build/css src/scss/style.scss",
+    "watch:autoprefixer": "autoprefixer-cli build/css/style.css",
+    "watch:browser": "browser-sync start -s -f build/css/*.css build/index.html --startPath build/index.html -b chrome ",
     "watch:npm-watch": "npm-watch"
   },
   "author": "Jakub Nakielski",
