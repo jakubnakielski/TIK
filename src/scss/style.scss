@@ -133,7 +133,7 @@ body {
       }
     }
 
-    .socials__header {
+    .socialsHeader {
       margin-top: 45px;
       font-weight: bold;
       width: 320px;
@@ -143,6 +143,42 @@ body {
         display: block;
         border: 1px solid $border-color;
         margin-top: 15px;
+      }
+    }
+
+    .socials {
+      display: flex;
+
+      &__item {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background: rgba(118, 135, 145, 0.15);
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+
+        transition: 0.2s;
+
+        &--fb {
+          color: #3b5998;
+        }
+        &--tw {
+          color: #1da1f2;
+        }
+        &--insta {
+          color: #fa7e1e;
+        }
+        &--link {
+          color: #0e76a9;
+        }
+        &--yt {
+          color: #c4302b;
+        }
+
+        &:hover {
+          color: $lightGrey;
+        }
       }
     }
   }
