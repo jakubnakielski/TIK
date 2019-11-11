@@ -29,7 +29,6 @@ body {
 }
 
 .mainHero__textContainer {
-  max-width: 1200px;
   position: absolute;
   bottom: 150px;
   left: 200px;
@@ -58,7 +57,7 @@ body {
 }
 .mainHero__title {
   font-size: 2.2em;
-  text-shadow: #aaa 0px 0px 3px;
+  text-shadow: white 0px 0px 5px;
 }
 .mainHero__btn {
   width: 140px;

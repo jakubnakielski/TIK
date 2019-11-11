@@ -29,15 +29,15 @@ body {
 }
 
 .mainHero__textContainer {
-  max-width: 1200px;
   position: absolute;
   bottom: 150px;
   left: 200px;
-  height: 250px;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
+  //   outline: 1px solid red;
 }
 .mainHero__caption {
   position: relative;
@@ -58,25 +58,12 @@ body {
 }
 .mainHero__title {
   font-size: 2.2em;
-  text-shadow: #aaa 0px 0px 3px;
 }
 .mainHero__btn {
-  width: 140px;
+  width: 120px;
   background: $btn-color;
-  border-radius: 5px;
-  padding: 12px 15px;
-  font-size: 0.7em;
-  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 0.8em;
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.mainHero__btn:hover {
-  background-color: rgb(212, 28, 28);
-}
-.mainHero__quote {
-  font-style: italic;
-  transform: translateY(30px);
 }

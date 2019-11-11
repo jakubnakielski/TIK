@@ -5,7 +5,7 @@ $btn-color: red;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  //   outline: 1px solid red;
+  outline: 1px solid red;
 }
 body {
   min-height: 200vh;
@@ -29,7 +29,6 @@ body {
 }
 
 .mainHero__textContainer {
-  max-width: 1200px;
   position: absolute;
   bottom: 150px;
   left: 200px;
@@ -38,6 +37,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   color: white;
+  //   outline: 1px solid red;
 }
 .mainHero__caption {
   position: relative;
@@ -58,7 +58,6 @@ body {
 }
 .mainHero__title {
   font-size: 2.2em;
-  text-shadow: #aaa 0px 0px 3px;
 }
 .mainHero__btn {
   width: 140px;
