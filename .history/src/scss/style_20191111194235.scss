@@ -77,17 +77,16 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.2s;
-
-    &:hover {
-      background-color: rgb(212, 28, 28);
-    }
   }
+}
 
-  &__quote {
-    color: $lightGrey;
-    font-style: italic;
-    transform: translateY(40px);
-  }
+.mainHero__btn:hover {
+  background-color: rgb(212, 28, 28);
+}
+.mainHero__quote {
+  color: $lightGrey;
+  font-style: italic;
+  transform: translateY(40px);
 }
 
 .footer {

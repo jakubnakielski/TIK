@@ -82,12 +82,12 @@ body {
       background-color: rgb(212, 28, 28);
     }
   }
+}
 
-  &__quote {
-    color: $lightGrey;
-    font-style: italic;
-    transform: translateY(40px);
-  }
+.mainHero__quote {
+  color: $lightGrey;
+  font-style: italic;
+  transform: translateY(40px);
 }
 
 .footer {
