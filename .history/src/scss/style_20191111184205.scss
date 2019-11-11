@@ -31,11 +31,11 @@ body {
 .mainHero__textContainer {
   position: absolute;
   bottom: 150px;
-  left: 200px;
-  height: 200px;
+  left: 150px;
+  width: 500px;
+  //   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: white;
   //   outline: 1px solid red;
 }
@@ -43,7 +43,7 @@ body {
   position: relative;
   font-size: 0.9em;
   font-weight: bold;
-  text-shadow: #777 0px 0px 2px;
+  text-shadow: #fc0 1px 0 10px;
 }
 .mainHero__caption::before {
   content: "";
@@ -55,7 +55,4 @@ body {
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-left: 8px solid $btn-color;
-}
-.mainHero__title {
-  font-size: 2.2em;
 }

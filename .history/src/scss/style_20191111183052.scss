@@ -9,7 +9,7 @@ $btn-color: red;
 }
 body {
   min-height: 200vh;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .container {
   width: 1200px;
@@ -31,31 +31,11 @@ body {
 .mainHero__textContainer {
   position: absolute;
   bottom: 150px;
-  left: 200px;
-  height: 200px;
+  left: 150px;
+  width: 500px;
+  //   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: white;
-  //   outline: 1px solid red;
-}
-.mainHero__caption {
-  position: relative;
-  font-size: 0.9em;
-  font-weight: bold;
-  text-shadow: #777 0px 0px 2px;
-}
-.mainHero__caption::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -22px;
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid $btn-color;
-}
-.mainHero__title {
-  font-size: 2.2em;
+  outline: 1px solid red;
 }

@@ -31,7 +31,7 @@ body {
 .mainHero__textContainer {
   position: absolute;
   bottom: 150px;
-  left: 200px;
+  left: 150px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -57,5 +57,6 @@ body {
   border-left: 8px solid $btn-color;
 }
 .mainHero__title {
-  font-size: 2.2em;
+  font-size: 2em;
+  font-weight: 600;
 }
