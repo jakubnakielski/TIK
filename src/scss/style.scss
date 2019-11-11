@@ -135,7 +135,7 @@ body {
 
     .socialsHeader {
       margin-top: 45px;
-      font-weight: bold;
+      font-weight: 700;
       width: 320px;
 
       &::after {
@@ -148,6 +148,9 @@ body {
 
     .socials {
       display: flex;
+      justify-content: space-between;
+      width: 290px;
+      margin-top: 30px;
 
       &__item {
         width: 50px;
