@@ -211,7 +211,7 @@ body {
         margin-top: 25px;
         color: $grey;
         font-size: 14px;
-        padding-right: 20px;
+        padding-right: 30px;
       }
     }
 
@@ -233,16 +233,18 @@ body {
       }
 
       &__post {
-        margin-top: 25px;
+        margin-top: 35px;
         color: $grey;
         font-size: 14px;
-        padding-right: 20px;
+        padding-right: 50px;
       }
 
       &__img {
+        float: left;
         width: 50px;
         height: 50px;
         border-radius: 55px;
+        margin-right: 20px;
       }
     }
   }
