@@ -1,5 +1,13 @@
 const btn = document.getElementById("heroBtn");
 const hero = document.querySelector(".mainHero");
+const newsletterIcon = document.querySelector(".newsletter__icon");
+const newsletterInput = document.querySelector(".newsletter__input");
+
+newsletterIcon.addEventListener("click", e => {
+  setTimeout(() => {
+    newsletterInput.value = "";
+  }, 750);
+});
 
 btn.addEventListener("click", e => {
   const heroHeight = hero.getBoundingClientRect().height;
